@@ -32,6 +32,11 @@ Author URL : https://themeforest.net/user/divine-store
 
 /* GLOBAL STYLES */
 
+* {
+
+box-sizing: border-box;
+}
+
 body {
 	background: #070709;
 	font-family: 'Work Sans', sans-serif;
