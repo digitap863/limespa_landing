@@ -42,7 +42,7 @@ body {
 	font-family: 'Work Sans', sans-serif;
 	color: #fff;
 	font-weight: 300;
-	font-size: 15px;
+	
 	letter-spacing: 0.5px;
 }
 
@@ -59,7 +59,7 @@ p {
 	color: #fff;
 	line-height: 28px;
 	font-weight: 300;
-	font-family: 'Roboto', sans-serif;
+	font-family: 'work sans', sans-serif;
 	letter-spacing: 0.5px;
 }
 
@@ -1813,9 +1813,10 @@ border-radius: 15px;
 	padding: 12px 0 9px 35px;
 	position: relative;
 	color: #fff;
+	font-weight: 600;
 	border-radius: 10px;
 	margin: 8px;
-	font-family: 'open sans',sans-serif;
+	font-family: 'Work Sans', sans-serif;
 }
 
 .list li i {
