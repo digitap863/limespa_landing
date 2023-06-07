@@ -39,7 +39,7 @@ box-sizing: border-box;
 
 body {
 	background: #070709;
-	font-family: 'Poltawski Nowy', serif;
+	font-family: 'Poppins', sans-serif;
 	color: #fff;
 	font-weight: 300;
 	
@@ -60,7 +60,7 @@ p {
 	color: #fff;
 	line-height: 28px;
 	font-weight: 300;
-	font-family: 'Poltawski Nowy', serif;
+	font-family: 'Poppins', sans-serif;
 	letter-spacing: 0.5px;
 }
 
@@ -73,7 +73,7 @@ a {
 }
 
 a:hover {
-	color: #d1d1d1;
+	color: white;
 }
 
 a, a:hover, a:focus, button, button:hover {
@@ -196,7 +196,8 @@ ul, ol, li {
 /*  HEADER STYLES */
 
 .navbar-fixed-top {
-	position: fixed;
+	/* position: fixed;*/
+	position: absolute;
 	right: 0;
 	left: 0;
 	font-family: 'Playfair Display', serif;
