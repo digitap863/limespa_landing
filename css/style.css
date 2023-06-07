@@ -50,7 +50,7 @@ h1,h2,h3,h4,h5,h6 {
 	color: #fff;
 	font-family: 'Playfair Display', serif;
 	
-	font-weight: 600;
+	font-weight: 500;
 	margin: 0;
 	letter-spacing: 1.5px;
 }
@@ -1927,7 +1927,7 @@ border-radius: 15px;
 	margin-bottom: 15px;
 	font-size: 36px;
 	line-height: 48px;
-	font-weight: 700;
+	
 }
 
 .about-inline p {
