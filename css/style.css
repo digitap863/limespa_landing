@@ -410,14 +410,15 @@ ul, ol, li {
 .intro1 {
 	background: #000000 url(../images/bg/mobile.png) no-repeat;
 	background-size: cover;
-	padding: 100px 0 500px;
+	padding: 250px 0 300px;
 }
 }
+
 .intro1 h2 {
 	color: #fff;
 	font-size: 53px;
 	text-transform: none;
-	font-weight: 700;
+	
 	margin: 0 0 15px;
 }
 
@@ -6282,3 +6283,12 @@ input:focus, textarea:focus {
 	color:#ed1b24;
 }
 
+@media (min-width:768px) {
+
+	.col-sm-10 {
+position: relative;
+left:10%;
+	}
+
+	
+}
