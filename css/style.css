@@ -39,7 +39,7 @@ box-sizing: border-box;
 
 body {
 	background: #070709;
-	font-family: 'Work Sans', sans-serif;
+	font-family: 'Poltawski Nowy', serif;
 	color: #fff;
 	font-weight: 300;
 	
@@ -48,10 +48,11 @@ body {
 
 h1,h2,h3,h4,h5,h6 {
 	color: #fff;
-	font-family: 'Work Sans', sans-serif;
-	font-weight: 700;
+	font-family: 'Playfair Display', serif;
+	
+	font-weight: 600;
 	margin: 0;
-	letter-spacing: -0.5px;
+	letter-spacing: 1.5px;
 }
 
 p {
@@ -59,7 +60,7 @@ p {
 	color: #fff;
 	line-height: 28px;
 	font-weight: 300;
-	font-family: 'work sans', sans-serif;
+	font-family: 'Poltawski Nowy', serif;
 	letter-spacing: 0.5px;
 }
 
@@ -72,7 +73,7 @@ a {
 }
 
 a:hover {
-	color: #ed1b24;
+	color: #d1d1d1;
 }
 
 a, a:hover, a:focus, button, button:hover {
@@ -198,10 +199,10 @@ ul, ol, li {
 	position: fixed;
 	right: 0;
 	left: 0;
-	font-family: 'Roboto Slab', sans-serif;
+	font-family: 'Playfair Display', serif;
 	border-width: 0;
 	border-radius: 0;
-	background: transparent;
+	/* background: transparent;*/
 	border-top: 5px solid #fff72fe8;
 }
 
@@ -226,7 +227,7 @@ ul, ol, li {
 
 .navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:hover, .navbar-inverse .navbar-nav > .active > a:focus {
 	color: #fff;
-	background-color: transparent;
+	/*background-color: transparent;*/
 }
 
 .navbar-lg .navbar-nav > li > a {
@@ -400,11 +401,17 @@ ul, ol, li {
 /*  Intro */
 
 .intro1 {
-	background: #000000 url(../images/bg/massage.jpg) no-repeat;
+	background: #000000 url(../images/bg/banner-1.png) no-repeat;
 	background-size: cover;
-	padding: 230px 0 200px;
+	padding: 200px 0 380px;
 }
-
+@media (max-width:679px) {
+.intro1 {
+	background: #000000 url(../images/bg/mobile.png) no-repeat;
+	background-size: cover;
+	padding: 100px 0 500px;
+}
+}
 .intro1 h2 {
 	color: #fff;
 	font-size: 53px;
@@ -1816,7 +1823,7 @@ border-radius: 15px;
 	font-weight: 600;
 	border-radius: 10px;
 	margin: 8px;
-	font-family: 'Work Sans', sans-serif;
+	font-family: 'Poppins', 'Playfair Display', sans-serif, serif;
 }
 
 .list li i {
@@ -1873,7 +1880,7 @@ border-radius: 15px;
 /*  ABOUT */
 
 .about-inline {
-	padding: 50px 0;
+	padding: 100px 0;
 }
 
 .about-inline .ai-slide {
@@ -1925,6 +1932,8 @@ border-radius: 15px;
 .about-inline p {
 	font-size: 17px;
 	padding: 0 14%;
+	line-height: 30px;
+	letter-spacing: 2px;
 }
 
 .ai-list {
@@ -3971,7 +3980,7 @@ footer .list-inline li {
 }
 
 .parallax-content {
-	background: url(../images/parallax/1.jpg) no-repeat center fixed;
+	background: url(../images/bg/massage.jpg) no-repeat center fixed;
 	background-size: cover;
 	padding: 150px 0;
 	position: relative;
@@ -5786,9 +5795,9 @@ input:focus, textarea:focus {
 		margin: -30px 0 15px;
 	}
 
-	.intro1 {
-		padding: 120px 0 90px;
-	}
+	/*.intro1 {
+		padding: 60px 0 60px;
+	}*/
 
 	.intro4 p {
 		padding: 0;
@@ -6129,7 +6138,7 @@ input:focus, textarea:focus {
 	}
 	
 	.navbar-inverse .navbar-toggle .icon-bar {
-    background-color: #000;
+    /*background-color: #000;*/
 }
 
 	.navbar-toggle .icon-bar:nth-child(3) {
@@ -6271,3 +6280,4 @@ input:focus, textarea:focus {
 .footerP p:hover{
 	color:#ed1b24;
 }
+
