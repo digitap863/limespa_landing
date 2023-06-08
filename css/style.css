@@ -6327,3 +6327,17 @@ background-size: cover !important;
 background-size: cover !important;
   background: linear-gradient(to bottom, rgba(0,0,0,0.7) 0%,rgba(0,0,0,0.7) 100%) , url(../images/parallax2.jpg);
 }
+
+@media (max-width:901px) {
+
+	.showcase {
+background-attachment: fixed !important;
+	background-size: cover !important;
+	
+	}
+		.showcase2 {
+background-attachment: fixed !important;
+	background-size: cover !important;
+	
+	}
+}
