@@ -32,7 +32,7 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Work+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poltawski+Nowy&display=swap" rel="stylesheet">
     
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins:wght@300&display=swap" rel="stylesheet">
@@ -48,6 +48,46 @@
 </head>
 
 <body id="page-top">
+
+    <div class="col-sm-5 col-md-7">
+        <div class="intro-form" id="join-us-form contact-form">
+                        <h4>Book Now !</h4>
+                        
+                        <div id="join-us-results"></div>
+                                 
+        <div class="form-group">
+          <input type="text" name="first_name" id="first_name" class="form-control f-input input-field" placeholder="First Name" />
+        </div>
+        <div class="form-group">
+          <input type="text" name="last_name" id="last_name" class="form-control f-input input-field" placeholder="Last Name" />
+        </div>
+        <div class="form-group">
+          <input type="text" name="email" class="form-control f-input input-field" placeholder="Email" />
+        </div>
+        <div class="form-group">
+          <input type="text" name="phone" maxlength="15"  class="form-control f-input input-field" placeholder="Phone" />
+        </div>
+        <div class="form-group">
+          <input type="text" name="website" class="form-control f-input input-field" placeholder="website" />
+        </div>
+        <button type="submit" class="btn btn-block btn-lg btn-primary" id="submit_btn">Make an Appointment</button>
+
+        </div>
+                <div id="sendingMessage" class="statusMessage">
+                    <p><i class="fa fa-spin fa-cog"></i> Sending your message. Please wait...</p>
+                </div>
+
+                <div id="successMessage" class="successmessage">
+                    <p><span class="success-ico"></span> Thanks for sending your message! We'll get back to you shortly.</p>
+                </div>
+                <div id="failureMessage" class="errormessage">
+                    <p><span class="error-ico"></span> There was a problem sending your message. Please try again.</p>
+                </div>
+                <div id="incompleteMessage" class="statusMessage">
+                    <p><i class="fa fa-warning"></i> Please complete all the fields in the form before sending.</p>
+                </div>
+                        
+        </div>
 
     <div class="body">
         <!-- HEADER -->
@@ -115,8 +155,9 @@
                        
                     </div>
                     <br><br>
-                  <!--  <div class="col-sm-5 col-md-7">
-                        <div class="intro-form" id="join-us-form contact-form">
+
+        <!--  <div class="col-sm-5 col-md-7">
+            <div class="intro-form" id="join-us-form contact-form">
                             <h4>Book Now !</h4>
                             
                             <div id="join-us-results"></div>
@@ -137,7 +178,8 @@
               <input type="text" name="website" class="form-control f-input input-field" placeholder="website" />
             </div>
 			<button type="submit" class="btn btn-block btn-lg btn-primary" id="submit_btn">Make an Appointment</button>
-        </div>
+
+            </div>
 					<div id="sendingMessage" class="statusMessage">
 						<p><i class="fa fa-spin fa-cog"></i> Sending your message. Please wait...</p>
 					</div>
@@ -152,7 +194,7 @@
 						<p><i class="fa fa-warning"></i> Please complete all the fields in the form before sending.</p>
 					</div>
                             
-                    </div> -->
+            </div> -->
 
                     </div>
                 </div>
@@ -196,7 +238,11 @@
 
         <!-- ABOUT -->
         <section class="showcase">
-        <div id="features" class="container" style="margin-bottom: 70px;margin-top: 100px;" >
+            <div style="padding: 4px;">
+                <img src="images/services/flore element 1.svg" width="100px" style="transform: scaleX(-1);">
+                <img src="images/services/flore element 1.svg" width="100px" style="position: absolute;right:0">
+            </div>
+        <div id="features" class="container" style="margin-bottom: 70px;margin-top: 100px;">
            
            
              <!--   <div class="container-fluid">
@@ -210,9 +256,10 @@
                 </div> -->
 
             <div class="about-inline text-center" style="padding-bottom:100px">
+
                 <div class="container">
                     <h3 style="letter-spacing:1px;"> Immerse in <br>Our Ultimate Spa Experience </h3>
-                        <p style="padding:0px 14px;font-family: 'Poppins', sans-serif;text-align:justify;">Escape the hustle-bustle of everyday life and step into a world of tranquility. 
+                        <p style="font-family: 'Poppins', sans-serif;text-align:justify;">Escape the hustle-bustle of everyday life and step into a world of tranquility. 
                         Welcome to Lime Spa, your ultimate destination for a blissful spa experience in Trivandrum. We believe in the perfect balance of wellness and luxury.
                         Immerse yourself in the world of rejuvenation at our Ayurvedic massage center in Trivandrum, with modern techniques to offer you an unparalleled escape.
                         Unwind in our serene atmosphere, infused with soothing aromas and serene ambiance, and let our expert therapists transport you to a realm of sublime tranquility.
@@ -224,9 +271,12 @@
             <div class="about-inline text-center">
                 <div class="container">
                     
-                    <h3> Ayurvedic Spa </h3>
+                    <h3><img src="images/services/Asset 5floral element 4.svg" width="65px" style="transform: scaleX(-1);"> 
+                        Ayurvedic Spa
+                        <img src="images/services/Asset 5floral element 4.svg" width="65px" style="transform: scaleX(1);"> 
+                    </h3>
                     <h4 style="font-family:'Poppins',sans-serif">Rediscover Balance and Vitality! </h4><br>
-                    <p style="font-size:17px;padding:0px 14px;font-family: 'Poppins', sans-serif;text-align:justify;">Immerse yourself in a world of pure bliss and rejuvenation as our expert therapists pamper you with the best traditional Ayurvedic treatment that soothes your senses and revitalizes your body & mind.
+                    <p style="font-size:17px;font-family: 'Poppins', sans-serif;text-align:justify;">Immerse yourself in a world of pure bliss and rejuvenation as our expert therapists pamper you with the best traditional Ayurvedic treatment that soothes your senses and revitalizes your body & mind.
                     Discover the true essence of tranquility at our serene spa, where we offer an array of therapeutic services, including full-body Ayurvedic massages and specialized hair treatments in Trivandrum. 
                     Experience the healing touch of Ayurveda in the heart of Trivandrum, in our massage center at Kovalam beach. Indulge in the ancient healing art of Marma massage, experience the soothing benefits of Abhyangam,
                     or reach a state of bliss with our Nirvana massage. Therapeutic treatments such as Shirodhara, Njavara Kizhi and Udwarthanam are also provided to enhance your overall well-being.
@@ -241,15 +291,15 @@
                     <div class="row center-content">
                         
                         <div class="col-md-8 text-center">
-                            <img src="images/services/1.jpg" class="img-responsive" alt="" style="border-radius: 10px;">
+                            <img src="images/18-SM869507.jpg" class="img-responsive" alt="" width="450px" style="border-radius: 10px;">
                         </div><br>
 
                         <div class="col-md-4" style="margin-top:25px;padding: 0px 30px 0px 30px;"> 
                             <ul class="list">
-                                <li style="background-color:#000;opacity: 0.8"><i class="icon-check"></i><a href="#" style="text-decoration:none;color:#fdc202;"> Massage Packages</a></li>
-                                <li style="background-color:#000;opacity: 0.8"><i class="icon-check"></i><a href="#" style="text-decoration:none;color:#fdc202;"> Therapy Packages</a></li>
-                                <li style="background-color:#000;opacity: 0.8"><i class="icon-check"></i><a href="#" style="text-decoration:none;color:#fdc202;"> Skin Care Packages</a> </li>
-                                <li style="background-color:#000;opacity: 0.8""><i class="icon-check"></i><a href="#" style="text-decoration:none;color:#fdc202;"> Signature Packages</a></li>
+                                <li style="opacity: 0.8"><i class="icon-check"></i><a href="#" style="font-size:16px;"> Massage Packages</a></li>
+                                <li style="opacity: 0.8"><i class="icon-check"></i><a href="#" style="font-size:16px;"> Therapy Packages</a></li>
+                                <li style="opacity: 0.8"><i class="icon-check"></i><a href="#" style="font-size:16px;"> Skin Care Packages</a> </li>
+                                <li style="opacity: 0.8"><i class="icon-check"></i><a href="#" style="font-size:16px;"> Signature Packages</a></li>
                                 
                             </ul>
                             <div class="space30"></div>
@@ -265,7 +315,7 @@
         </div>
     </section>
     
-    <br><br>    
+    
       <!--  <section class="parallax-content parallax1 text-center" data-stellar-background-ratio="0.4">
             <div class="overlay"></div>
             <div class="container">
@@ -309,7 +359,8 @@
                             <p style="text-align:center">TAILORED JUST FOR YOU</p> 
                         
                         <div align="center">
-                            <a class="btn btn-lg btn-primary" onclick="openform()">REQUEST ASSISTANCE <i class="icon-arrow-right"></i></a>
+                            <a class="btn btn-lg btn-primary" onclick="openForm()">REQUEST ASSISTANCE <i class="icon-arrow-right"></i></a>
+                            
                         </div>
                     </div>
                     
@@ -318,17 +369,21 @@
             </div>
         </section>
 
-    <br><br>
+   <!-- <br><br> -->
 
             <!-- INFO CONTENT -->
             <section class="showcase2">
-
+                <div style="padding: 4px;">
+                    <img src="images/services/flore element 1.svg" width="80px" style="transform: scaleX(-1)">
+                    <img src="images/services/flore element 1.svg" width="80px" style="position: absolute;right:0">
+                </div>
+                
             <div class="about-inline text-center">
                 <div class="container">
                     
                     <h3> Western Spa </h3>
                     <h4 style="letter-spacing: 1px;font-family:'Poppins',sans-serif ;">Step into a luxurious spa experience in Trivandrum !</h4><br>
-                    <p style="font-size:17px;padding:0px 14px;font-family: 'Poppins', sans-serif;text-align:justify;">Nestled in the heart of the city, Lime Spa offers an oasis of tranquility where you can escape the stresses of everyday life. 
+                    <p style="font-size:17px;font-family: 'Poppins', sans-serif;text-align:justify;">Nestled in the heart of the city, Lime Spa offers an oasis of tranquility where you can escape the stresses of everyday life. 
                     Whether you're in need of the best hair spa or craving the best massage experience in Trivandrum, our skilled therapists are dedicated to 
                     providing you with exceptional treatments that will leave you feeling renewed and refreshed. With our unisex spa facilities, you can unwind and immerse themselves in a haven of serenity.
                     Rejuvenating treatments including Swedish and Balinese massages, soothing Aromatherapy massages, delicate Sensitive Facials, invigorating De-Aging SaltMousse Scrubs and Aromatic 
@@ -350,9 +405,9 @@
                            <!-- <h3>Watch youtube video and get details of our center. </h3> -->
                            
                             <ul class="list">
-                                <li style="background-color:#000;opacity: 0.8"><i class="icon-check"></i><a href="#" style="text-decoration:none;color:#fdc202;"> Massage Packages</a></li>
-                                <li style="background-color:#000;opacity: 0.8"><i class="icon-check"></i><a href="#" style="text-decoration:none;color:#fdc202;"> Facial Packages</a></li>
-                                <li style="background-color:#000;opacity: 0.8"><i class="icon-check"></i><a href="#" style="text-decoration:none;color:#fdc202;"> Skin Care Packages </a></li>
+                                <li style="opacity: 0.8"><i class="icon-check"></i><a href="#" style="font-size:16px;"> Massage Packages</a></li>
+                                <li style="opacity: 0.8"><i class="icon-check"></i><a href="#" style="font-size:16px;"> Facial Packages</a></li>
+                                <li style="opacity: 0.8"><i class="icon-check"></i><a href="#" style="font-size:16px;"> Skin Care Packages </a></li>
 
                             </ul>
 
@@ -378,8 +433,8 @@
                 <div class="about-inline text-center">
                     
                     <h3> Discover Your Desired Look: Beauty Salon </h3>
-                    <p style="font-family: 'Poppins', sans-serif;text-align: justify;padding:0px 14px;">Not only exceptional spa services but also a comprehensive beauty salon in Trivandrum!</p><br>
-                    <p style="font-family: 'Poppins', sans-serif;text-align: justify;padding:0px 14px;"> Our service caters to your needs, ensuring that you feel confident and fabulous. 
+                    <p style="font-family: 'Poppins', sans-serif;text-align: justify;">Not only exceptional spa services but also a comprehensive beauty salon in Trivandrum!</p><br>
+                    <p style="font-family: 'Poppins', sans-serif;text-align: justify;"> Our service caters to your needs, ensuring that you feel confident and fabulous. 
                     From trendy haircuts to stunning hair color transformations, our skilled stylists at the best hair salon in Trivandrum are well-versed in trends.
                     Our unisex beauty parlour ensures top-notch grooming for ladies and gents in a comfortable and stylish setting. Whether you're a bride-to-be seeking
                      flawless bridal makeup or simply looking for hairdressing, we tailor our skills to your unique preferences. Various facials, customized wedding packages, 
@@ -464,9 +519,9 @@
 
         <!-- TESTIMONIALS -->
         <div id="reviews">
-            <div style="padding: 20px;">
-                <img src="images/services/flore element 1.svg" width="125px" style="transform: rotate(180deg);">
-                <img src="images/services/flore element 1.svg" width="125px" style="position: absolute;right:0">
+            <div style="padding:5px;">
+                <img src="images/services/flore element 1.svg" width="100px" style="transform: scaleX(-1);">
+                <img src="images/services/flore element 1.svg" width="100px" style="position: absolute;right:0">
             </div>
 
             <div class="container">
@@ -504,7 +559,7 @@
                     </div>
                 </div>
 
-                <center><img src="images/services/Asset 3floral element 2.svg" width="50%"></center>
+                <center><img src="images/services/Asset 3floral element 2.svg" width="55%"></center>
                 <div class="space100"></div>
             </div>
         </div>
@@ -555,10 +610,16 @@
                         <h3>Lime Spa is here for you to radiate your Inner beauty.<br>
                              <span> Visit us and elevate your confidence!</span></h3>
                         <p></p><br>
-                        <center><img src="images/services/Asset 4floral element 3.svg" width="50%"></center>
-                      <!--  <a href="#home" class="page-scroll btn btn-primary">Make an Appointment</a> -->
+                        <center><img src="images/services/Asset 4floral element 3.svg" width="50%"><br><br> </center>
+                        <a href="#popup" onclick="openForm()" class="page-scroll btn btn-primary">Make an Appointment</a>
+                                
                     </div>
                 </div>
+            </div>
+
+            <div align="left" style="padding: 4px;">
+                <img src="images/services/flore element 1.svg" width="100px" style="transform: scale(-1, -1);">
+                <img src="images/services/flore element 1.svg" width="100px" style="position: absolute;right:0;transform: scale(1, -1);">
             </div>
         </section>
 
@@ -571,7 +632,7 @@
         </div>
 
         <!-- CONTACT INFO -->
-        <div id="contact-info">
+        <div id="contact-info" style="background-color: #000c00;">
             <div class="container">
                 <div class="row">
 
@@ -697,7 +758,7 @@
         </footer> -->
 
         <!-- COPYRIGHT -->
-        <div class="footer-copy">
+        <div class="footer-copy" style="background-color: #000c00;">
             <div class="container">
                 &copy; 2023. Limespa. All rights reserved.
             </div>
@@ -720,6 +781,45 @@
           </form>
         </div> -->
 
+       <!-- <div class="col-sm-5 col-md-7">
+            <div class="intro-form" id="join-us-form contact-form">
+                            <h4>Book Now !</h4>
+                            
+                            <div id="join-us-results"></div>
+                                     
+		    <div class="form-group">
+              <input type="text" name="first_name" id="first_name" class="form-control f-input input-field" placeholder="First Name" />
+            </div>
+            <div class="form-group">
+              <input type="text" name="last_name" id="last_name" class="form-control f-input input-field" placeholder="Last Name" />
+            </div>
+            <div class="form-group">
+              <input type="text" name="email" class="form-control f-input input-field" placeholder="Email" />
+            </div>
+            <div class="form-group">
+              <input type="text" name="phone" maxlength="15"  class="form-control f-input input-field" placeholder="Phone" />
+            </div>
+            <div class="form-group">
+              <input type="text" name="website" class="form-control f-input input-field" placeholder="website" />
+            </div>
+			<button type="submit" class="btn btn-block btn-lg btn-primary" id="submit_btn">Make an Appointment</button>
+
+            </div>
+					<div id="sendingMessage" class="statusMessage">
+						<p><i class="fa fa-spin fa-cog"></i> Sending your message. Please wait...</p>
+					</div>
+
+					<div id="successMessage" class="successmessage">
+						<p><span class="success-ico"></span> Thanks for sending your message! We'll get back to you shortly.</p>
+					</div>
+					<div id="failureMessage" class="errormessage">
+						<p><span class="error-ico"></span> There was a problem sending your message. Please try again.</p>
+					</div>
+					<div id="incompleteMessage" class="statusMessage">
+						<p><i class="fa fa-warning"></i> Please complete all the fields in the form before sending.</p>
+					</div>
+                            
+        </div> -->
 
     <!-- JAVASCRIPT =============================-->
     <script src="js/jquery.js"></script>
@@ -739,14 +839,28 @@
     <script>
 
 function openForm() {
-  document.getElementById("myForm").style.display = "block";
+  document.querySelector(".intro-form").style.display = "block";
 }
 
 function closeForm() {
-  document.getElementById("myForm").style.display = "none";
+  document.querySelector(".intro-form").style.display = "none";
 }
 
     </script>   
+
+<!-- <script>
+
+    openform();
+    function openForm() {
+      document.getElementById("myForm").style.display = "block";
+    }
+    
+    function closeForm() {
+      document.getElementById("myForm").style.display = "none";
+    }
+    
+</script>  -->
+
 </body>
 
 </html>

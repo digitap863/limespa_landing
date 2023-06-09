@@ -431,11 +431,20 @@ ul, ol, li {
 	padding: 30px 40px 40px;
 	border-radius: 15px;
 	background: #fff;
-	webkit-box-shadow: 0px 40px 80px -40px rgba(0,0,0,1) !important;
+	-webkit-box-shadow: 0px 40px 80px -40px rgba(0,0,0,1) !important;
 	-moz-box-shadow: 0px 40px 80px -40px rgba(0,0,0,1) !important;
 	box-shadow: 0px 40px 80px -40px rgba(0,0,0,1) !important;
+	display: none;
+	position:fixed;
+	transform: translate(0%, 10%);
+	z-index: 1000;
 }
 
+@media (max-width:981px) {
+	.intro-form {
+		transform: translate(0%, 10%);
+	}
+}
 .intro-form h4 {
 	color: #000000;
 	font-size: 25px;
@@ -1569,8 +1578,8 @@ ul, ol, li {
 	text-transform:capitalize;
 	padding: 11px 28px;
 	border: none;
-	border-radius: 70px;
-	font-family: Roboto Slab;
+	border-radius: 4px;
+	font-family: 'Roboto', sans-serif;
 }
 
 .btn i {
@@ -1587,15 +1596,16 @@ ul, ol, li {
 }
 
 .btn.btn-primary {
-	background: #d4d412;
-	border: 1px solid #f1f1f1;
-	color: #fff;
+	background: #00ff00;
+	opacity: .82;
+	
+	color: #000c00;
 }
 
 .btn.btn-primary:hover {
-	border: 1px dashed #ed1b24 !important;
+	border: 1px dashed #1fed1b !important;
  background: transparent;
- color: #ed1b24;
+ color: #1fed1b;
 }
 
 .btn.btn-default {
@@ -1819,22 +1829,39 @@ border-radius: 15px;
 }
 
 .list li {
-	padding: 12px 0 9px 35px;
+	padding: 16px 0 12px 35px;
 	position: relative;
 	color: #fff;
+	background-color:#000;
 	font-weight: 600;
 	border-radius: 5px;
 	margin: 8px;
 	font-family: 'Poppins', 'Playfair Display', sans-serif, serif;
 }
 
+.list li:hover {
+background: #fdc202 ;
+
+}
+
+.list li a {
+	color:#fdc202;
+	}
+.list li:hover a {
+	color:#000;
+	text-decoration: underline;
+	}
+
 .list li i {
 	min-width: 30px;
 	color: #9b9b04;
 	position: absolute;
 	left: 0;
-	top: 10px;
+	top: 15px;
 	font-size: 23px;
+}
+.list li:hover i {
+	color: #000;
 }
 
 /*  TESTIMONIAL STYLES */
@@ -1877,7 +1904,6 @@ border-radius: 15px;
     width: 310px;
     border-radius: 15px;
 }
-
 
 /*  ABOUT */
 
@@ -1933,9 +1959,16 @@ border-radius: 15px;
 
 .about-inline p {
 	font-size: 17px;
-	padding: 0 14%;
+	padding: 0px;
 	line-height: 25px;
 	letter-spacing: 1.4px;
+}
+
+@media (max-width:701px) {
+	
+.about-inline p {
+	padding: 0 12px;
+}
 }
 
 .ai-list {
@@ -5948,9 +5981,9 @@ input:focus, textarea:focus {
 		margin: 95px 0 15px;
 	}
 
-	.info-content img {
+	/*.info-content img {
 		width: 130%;
-	}
+	}*/
 
 	.testimonials p {
 		font-size: 20px;
@@ -6341,3 +6374,7 @@ background-attachment: fixed !important;
 	
 	}
 }
+
+/* #myform {
+	display:none
+}*/
